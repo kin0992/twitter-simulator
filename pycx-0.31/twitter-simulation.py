@@ -366,7 +366,6 @@ def put_all_vip_in_list():
 
 def init():
     variabili.common_users = variabili.total_users - variabili.vip_users
-    variabili.nodi_vip_list = []
     variabili.vip_screen_time = 0
     variabili.nodi_vip_list = []
     # plt.clf()
