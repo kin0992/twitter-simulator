@@ -15,7 +15,7 @@ octave-workspace
 
 .DS_Store
 
-**/*.txt
+# **/*.txt
 **/*.csv
 **/*.json
 **/*.gexf
@@ -23,16 +23,16 @@ octave-workspace
 **/*_gitkeep
 **/*.pyc
 # File LaTex da non committare
-**/Relazione/**/*.aux
-**/Relazione/**/*.bbl
-**/Relazione/**/*.blg
-**/Relazione/**/*.lof
-**/Relazione/**/*.lot
-**/Relazione/**/*.log
-**/Relazione/**/*.out
-**/Relazione/**/*.toc
-**/Relazione/**/*.pdf
-**/Relazione/**/*.synctex.gz
+**/*.aux
+**/*.bbl
+**/*.blg
+**/*.lof
+**/*.lot
+**/*.log
+**/*.out
+**/*.toc
+# **/*.pdf
+**/*.synctex.gz
 **/*.tex
 
 # Byte-compiled / optimized / DLL files
