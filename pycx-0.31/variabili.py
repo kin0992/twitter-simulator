@@ -16,6 +16,9 @@ lucky_tweet_increment_following_one_step = 0.02
 #utenti totali della rete
 total_users = 1000
 
+#percentuale minima di follower per diventare vip
+lower_bound_vip_percentage = 0.2
+
 #calcolo di un numero di vip nella rete in percentuale
 vip_users = int(round(total_users * 0.2 / 100))
 common_users = total_users - vip_users
@@ -69,14 +72,16 @@ retweet_lambda_nvip_2 = 1.7
 retweet_lambda_vip_3 = 1.2
 retweet_lambda_nvip_3 = 1
 
+#penalità retweet persone seguite/non seguite
 penalty_neighbor = 0.08
 penalty_not_neighbor = 0.05
 
 time = 0
 vip_screen_time = 0
 tweet_id = 0
-chosen_node_id = 859
+chosen_node_id = 859 #id del nodo che si vuole monitorare
 
+#destinazioni file da salvare
 tweet_fortunato_path = 'data/nodi_da_controllare/tweet_fortunati.txt'
 file_retweet_vip_nvip = 'data/nodi_da_controllare/retweetted_by_vip.txt'
 nodo_monitorato_path = 'data/grafici/'
