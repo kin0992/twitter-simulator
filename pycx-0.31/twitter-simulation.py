@@ -387,7 +387,7 @@ def draw():
         if variabili.time > 20:  # 20 step per stabilizzare la rete
             if network.node[i]['vip'] != 1 and (
                         (network.node[i]['prob_following'] >= variabili.min_vip_uniform_following)
-                    and network.node[i]['num_followers'] >= (variabili.total_users * 0.2)):
+                    and network.node[i]['num_followers'] >= (variabili.total_users * variabili.lower_bound_vip_percentage)):
                 network.node[i]['vip'] = 1
                 variabili.nodi_vip_list.append(i)
                 network.node[i]['node_color'] = 'b'
