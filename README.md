@@ -1,4 +1,5 @@
 # Sviluppo di un modello per la simulazione della rete Twitter
+
 ### Un approccio basato sull'omofilia
 
 Autori: **Comi Marco** & **Gravina Marco**
